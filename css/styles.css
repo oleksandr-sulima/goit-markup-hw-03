@@ -19,12 +19,10 @@ h6 {
   margin-bottom: 0;
 }
 
-ul,
-li {
+ul {
   list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -36,7 +34,7 @@ button {
 }
 
 .container {
-  max-width: 1158px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -48,6 +46,7 @@ button {
   background: var(--WHITE, #fff);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -85,6 +84,8 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-links:hover,
@@ -117,11 +118,9 @@ button {
 /* Hero */
 .hero-section {
   background: var(--NAVY-BLUE, #2e2f42);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-basis: 1158px;
   height: 600px;
+  padding: 188px 0 188px;
 }
 
 .main-title {
@@ -130,9 +129,14 @@ button {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   max-width: 496px;
   margin-bottom: 48px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -148,11 +152,12 @@ button {
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  display: flex;
+  display: block;
   padding: 16px 32px;
-  justify-self: center;
   gap: 10px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .button:hover,
@@ -161,6 +166,10 @@ button {
 }
 /* Section #2 */
 /* Our Strenghts */
+.strength-section {
+  padding: 120px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -180,7 +189,6 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 120px;
   margin-bottom: 8px;
 }
 
@@ -188,13 +196,16 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 120px;
 }
 
 .strengths-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
+}
+
+.strenghts-list-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Section #3 */
@@ -306,10 +317,12 @@ button {
   background-color: #2e2f42;
   flex-basis: 1440px;
   height: 312px;
+  padding: 100px 0;
 }
 
 .footer-logo {
-  padding-top: 101px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-descr {
@@ -318,7 +331,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.32px;
   max-width: 264px;
-  margin-top: 17.5px;
 }
 
 .logo-studio-part-footer {
