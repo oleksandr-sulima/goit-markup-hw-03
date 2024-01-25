@@ -68,14 +68,12 @@ button {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-nav-list {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-links {
@@ -84,6 +82,7 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -336,6 +335,7 @@ button {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .footer-descr {
